@@ -1,0 +1,4 @@
+Release 0.0.1 (July 29th 2024)
+= = =
+ - Very first release!
+ - All informational arguments, 3 functional arguments created
