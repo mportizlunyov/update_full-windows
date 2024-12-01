@@ -1,6 +1,6 @@
 # Written by Mikhail P. Ortiz-Lunyov (mportizlunyov)
 #
-# Version 0.0.1 (July 29th, 2024)
+# Version 0.0.2 (December 1st, 2024)
 #
 # This script is licensed under the GNU Public License Version 3 (GPLv3).
 # Compatible and tested with Windows 10 & 11.
@@ -35,8 +35,8 @@ param (
 
 # Critical Variables
 ## Version
-$VersionNumb = "0.0.1"
-$VersionName = "July 29th 2024"
+$VersionNumb = "0.0.2"
+$VersionName = "December 1st 2024"
 $VersionFull = "v$VersionNumb ($VersionName)"
 ## Package manager
 ### Official
@@ -194,7 +194,7 @@ function Resolve-Flags () {
 function Update-Winget () {
   Write-Host ""
   Write-Host "`t* WinGet detected under $((Get-WmiObject -class Win32_OperatingSystem).Caption)"
-  winget upgrade --all
+  winget upgrade --all --accept-package-agreements
 }
 
 # Find package managers
